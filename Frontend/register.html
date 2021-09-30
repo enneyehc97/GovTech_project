@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wok Way</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+      <h1><img src="wokwaybanner.png"></h1>
+    </header>
+    <div class="columns">
+    <div id = "leftcolumn">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="inventory.html">Inventory</a>
+        <a href="register.html">Register</a>  
+    </nav>
+  </div>
+  <div id = "rightcolumn">
+    <h2 style="color: #000000;">Register here</h2>
+    <div id="content" style="margin-left: 0px">
+        <form method="post" action="show_post.php">
+        <div>
+			<label for="myName">*Name:</label>
+            <input type="text" name="Name" size=30 required placeholder = "Enter your name here"><br ><br>    
+        </div> 
+        <div>
+			<label for="myEmail">*Email:</label>
+            <input type="email" name="Email" id="email" size=30 required placeholder = "Enter your Email here"><br ><br>
+        </div>
+        <div> 
+            <label for="phone">*Mobile:</label>
+            <input type="tel" id="mobile" name="Mobile" maxlength="8" required placeholder = "Enter your mobile here">
+        </div>
+        <div>
+			<label for="myAddress">*Address:</label>
+            <input type="text" name="Address" size=30 required placeholder = "Enter your address here"><br ><br>    
+        </div> 
+        <div> 
+            <label for="password">*Password:</label>
+            <input type="tel" id="password" name="Password" minlength="8" required placeholder = "Enter your password here (min 8 characters)">
+        </div>
+        <br>
+        <div>
+            <input type="reset" id="" name="clear" value="Clear">
+        </div>
+        <br>
+        <div>
+            <input type="submit" id="" name="submit" value="Register Now">
+        </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    <footer>
+        <small><i>Copyright &copy; 2021 Wok Way<br>
+        <a href="mailto:wok@way.com">wok@way.com</a></i></small>
+      </footer>
+      </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Wok Way</title>
+<meta charset="utf-8">
+<script type="text/javascript" src="calcprice.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+      <h1><img src="wokwaybanner.png"></h1>
+    </header>
+    <div class="columns">
+    <div id = "leftcolumn">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="inventory.html">Inventory</a> 
+        <a href="register.html">Register</a> 
+        
+    </nav>
+  </div>
+  <div id = "rightcolumn">
+    <h2 style="color: #000000;">Menu</h2>
+    <div id = "content">
+        <table>
+            <tr>
+                <td class="food">ID</td>
+                <td class="food">Name</td>
+                <td class="food">Description</td> 
+                <td class="food">Price($)</td>
+                <td class="food"></td>
+                <td class="food"></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="food">Specialty Fried Rice</td>
+                <td>Fried rice with signature sauce.</td>
+                <td> 
+                    <form name="specialtyRadio">
+                      <label><input type="radio" id="specialty" name="specialtyRadio" checked="checked" onchange="calculatePrice(1)">$4.00</label>
+                    </form>
+                      <td>
+                      <form onsubmit="return false;">
+                                          <label><input type="number" id="specialtyQuan" value="0" min="0" style="width:30px;" onchange="calculatePrice(1)"></label>
+                                      </form>
+                                  </td>
+                                  <td style="width:120px;">
+                                      <p>
+                                          Subtotal: $<span id="specialtyTotal"></span>
+                                      </p>
+                                  </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="food"> Beef/Chicken Fried Rice  </td>
+                <td> Fried rice with specially marinated beef slices / chicken thigh.</td>
+                <td> 
+                    <form name="BCRadio">
+                      <label><input type="radio" id="BC" name="BCRadio" checked="checked" onchange="calculatePrice(2)">$5.00</label>
+                    </form>
+                      <td>
+                      <form onsubmit="return false;">
+                                          <label><input type="number" id="BCQuan" value="0" min="0" style="width:30px;" onchange="calculatePrice(2)"></label>
+                                      </form>
+                                  </td>
+                                  <td style="width:120px;">
+                                      <p>
+                                          Subtotal: $<span id="BCTotal"></span>
+                                      </p>
+                                  </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="food"> Green Curry Fried Rice</td>
+                <td> Fried rice with tangy green curry.</td>
+                <td> 
+                    <form name="GCRadio">
+                      <label><input type="radio" id="GC" name="GCRadio" checked="checked" onchange="calculatePrice(3)">$4.50</label>
+                    </form>
+                      <td>
+                      <form onsubmit="return false;">
+                                          <label><input type="number" id="GCQuan" value="0" min="0" style="width:30px;" onchange="calculatePrice(3)"></label>
+                                      </form>
+                                  </td>
+                                  <td style="width:120px;">
+                                      <p>
+                                          Subtotal: $<span id="GCTotal"></span>
+                                      </p>
+                                  </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="food"> BBQ pork Fried Rice</td>
+                <td> Fried rice with sweet and savoury pork chunks.</td>
+                <td> 
+                    <form name="BBQRadio">
+                      <label><input type="radio" id="BBQ" name="BBQRadio" checked="checked" onchange="calculatePrice(4)">$4.50</label>
+                    </form>
+                      <td>
+                      <form onsubmit="return false;">
+                                          <label><input type="number" id="BBQQuan" value="0" min="0" style="width:30px;" onchange="calculatePrice(4)"></label>
+                                      </form>
+                                  </td>
+                                  <td style="width:120px;">
+                                      <p>
+                                          Subtotal: $<span id="BBQTotal"></span>
+                                      </p>
+                                  </td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td style="width:120px;">
+                    <p>
+                        Total: $<span id="totalPrice"></span>
+                    </p>
+                </td>
+            </tr>
+</table>
+    
+</div>
+<br>
+<br>
+</div>
+</div>
+<footer>
+<small><i>Copyright &copy; 2021 Wok Way<br>
+<a href="mailto:wok@way.com">wok@way.com</a></i></small>
+</footer>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wok Way</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+      <h1><img src="wokwaybanner.png"></h1>
+    </header>
+    <div class="columns">
+    <div id = "leftcolumn">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="inventory.html">Inventory</a>
+        <a href="register.html">Register</a>  
+    </nav>
+  </div>
+  <div id = "rightcolumn">
+    <h2 style="color: #000000;">Item</h2>
+    <div id="content" style="margin-left: 0px">
+    <form action="show_post.php" method="post">
+        <div>
+			<label for="myName">ID:</label>
+            <input type="text" name="Name" size=30 maxlength="3" required placeholder = "Enter ID here"><br ><br>    
+        </div> 
+        <div>
+			<label for="myName">Name:</label>
+            <input type="text" name="Name" size=30 required placeholder = "Enter Food Name here"><br ><br>    
+        </div> 
+        <div> 
+            <label style="vertical-align:top">Description:</label> 
+            <textarea type="textarea" name="comments" rows="4" cols="40" required placeholder = "Enter Description here"></textarea> 
+        </div>
+        <div> 
+            <label for="myName">Price:</label>
+            <input type="text" name="Name" size=30 required placeholder = "Enter price here"><br ><br>
+        </div>
+        <br>
+        <div>
+            <input type="reset" id="" name="clear" value="Clear">
+        </div>
+        <br>
+        <div>
+            <input type="submit" id="" name="submit" value="Update Item">
+        </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    <footer>
+        <small><i>Copyright &copy; 2021 Wok Way<br>
+        <a href="mailto:wok@way.com">wok@way.com</a></i></small>
+      </footer>
+      </div>
+</body>
+</html>

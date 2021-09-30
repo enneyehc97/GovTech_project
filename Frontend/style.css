@@ -1,0 +1,157 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  
+  #wrapper {
+    width: 80%;
+    margin: auto;
+    min-width: 800px;
+    box-shadow: 5px 10px 8px; #888888;
+  }
+
+  h1 {
+    text-align: center;
+    background-color: #ceb691;
+    height: 200px;
+    margin: auto;
+  }
+  
+  .columns {
+    display: flex;
+  }
+  
+  #leftcolumn {
+    float: left;
+    width: 15%;
+    background-color: #e2d1b2; /* color of navigation when not hovered */
+    display: block;
+  }
+  
+  nav {
+    /* padding: 20px 50px 60px 50px; */
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  a:hover:not(.active) {
+    background-color: #d1b38e; /* background color when hovering mouse over */
+  }
+  
+  a:link {
+    color: #735443;
+  }
+  
+  a:visited {
+    color: #9f846a; /* color of words in navigation */
+  }
+  
+  ul {
+    float: left;
+    padding-inline-start: 15px;
+  }
+  
+  
+  #rightcolumn {
+    /*margin-left: 155px;*/
+    float: left;
+    background-color: #f5f5dd;
+    width: 85%;
+    padding: 20px 20px 20px 20px;
+  }
+  
+  footer {
+    text-align: center;
+    clear: right;
+    font-size:70%;
+    background-color: #d1b38e;
+    padding: 20px 20px 20px 20px;
+  
+  }
+  
+  #image-content {
+    float: left;
+    margin: 10px 10px 10px 10px;
+  }
+  
+  #content {
+    float: left;
+    margin-left: 50px;
+  }
+  
+  li {
+    list-style-image: url(brownbullet.png);
+  }
+  
+  li, p {
+    color: #000000;
+    margin: 0px;
+    font-size: 14px;
+  }
+  
+  table {
+    padding: 10px;
+  }
+  
+  td {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    border-style: none;
+  }
+  
+  tr:nth-of-type(odd) {
+    background-color: #d1b38e;
+  }
+  
+  .food {
+    font-family: times, serif;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  td.food {
+    text-align: center;
+  }
+  
+  .tablecontent {
+    margin: auto;
+    width: 500px;
+  }
+  
+  .month {
+    font-weight: bold;
+    font-family: Verdana, Arial, sans-serif;
+    padding: 0px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .button {
+    border: none;
+    color: #9f846a;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button1 {background-color: #e2d1b2;} 
+  .button2 {background-color: #e2d1b2;}

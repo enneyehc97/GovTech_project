@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wok Way</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+      <h1><img src="wokwaybanner.png"></h1>
+    </header>
+    <div class="columns">
+    <div id = "leftcolumn">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="inventory.html">Inventory</a> 
+        <a href="register.html">Register</a> 
+        
+    </nav>
+  </div>
+  <div id = "rightcolumn">
+    <h2 style="color: #000000;">Update Item</h2>
+    <div id = "content">
+        <table>
+            <tr>
+                <td class="food">ID</td>
+                <td class="food">Name</td>
+                <td class="food">Description</td> 
+                <td class="food">Price</td>
+            </tr>
+            <tr>
+                <td><form action="show_get.php" method="get"> 
+                    <input type="radio" name="foodid" value="f1">1</td>
+                <td class="food">Specialty Fried Rice</td>
+                <td>Fried rice with signature sauce.</td> 
+                <td>$4.00</td>
+            </tr>
+            <tr>
+                <td><form action="show_get.php" method="get"> 
+                    <input type="radio" name="foodid" value="f2">2</td>
+                <td class="food"> Beef/Chicken Fried Rice  </td>
+                <td> Fried rice with specially marinated beef slices / chicken thigh.</td>
+                <td>$5.00</td>
+            </tr>
+            <tr>
+                <td><form action="show_get.php" method="get"> 
+                    <input type="radio" name="foodid" value="f3">3</td>
+                <td class="food"> Green Curry Fried Rice</td>
+                <td> Fried rice with tangy green curry.</td>
+                <td>$4.50</td>
+            </tr>
+            <tr>
+                <td><form action="show_get.php" method="get"> 
+                    <input type="radio" name="foodid" value="f4">4</td>
+                <td class="food"> BBQ pork Fried Rice</td>
+                <td> Fried rice with sweet and savoury pork chunks.</td>
+                <td>$4.50</td>
+            </tr>
+        </table>
+        <br>
+            <div>
+                <input type="reset" id="" name="clear" value="Clear">
+            </div>
+            <br>
+            <div>
+                <a href="editform.html">Update Item</a>
+            </div>
+     </div>
+     <br>
+     <br>
+</div>
+</div>
+<footer>
+    <small><i>Copyright &copy; 2021 Wok Way<br>
+    <a href="mailto:wok@way.com">wok@way.com</a></i></small>
+  </footer>
+  </div>
+</body>
+</html>
